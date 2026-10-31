@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Tập Listening (Question 21 - 30)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white shadow-md py-6 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-2xl font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-headphones"></i> Ôn Tập Listening Practice
+                </h1>
+                <p class="text-indigo-100 text-sm mt-1">Luyện tập kỹ năng nghe (Question 21 - 30) với phản hồi và đáp án chi tiết.</p>
+            </div>
+            <div id="timer" class="bg-indigo-700 px-4 py-2 rounded-lg font-mono text-lg border border-indigo-500 shadow-inner">
+                <i class="fa-regular fa-clock mr-1"></i> 30:00
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-4xl w-full mx-auto p-4 sm:p-6">
+        
+        <!-- Audio Player Section -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-6">
+            <h2 class="text-lg font-semibold text-slate-700 mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-volume-high text-indigo-600"></i> Bài Nghe (Audio)
+            </h2>
+            <p class="text-sm text-slate-500 mb-4">Hãy bấm nút Play trên trình phát bên dưới để nghe file audio trước khi trả lời câu hỏi.</p>
+            
+            <!-- Trình phát Audio trực tiếp từ thư mục audio/3.2.mp3 trên GitHub -->
+            <audio controls class="w-full focus:outline-none">
+                <source src="audio/3.2.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phát âm thanh.
+            </audio>
+        </section>
+
+        <!-- Quiz Form -->
+        <form id="quiz-form" class="space-y-6">
+
+            <!-- Question 21 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 question-card" data-q="21" data-answer="communicate">
+                <div class="font-medium text-slate-800 mb-2">
+                    <span class="text-indigo-600 font-bold mr-1">Question 21:</span> Listen and write <strong>ONE WORD ONLY</strong> for the answer.
+                </div>
+                <p class="text-slate-600 text-sm mb-3">21. Lectures are good for the lecturers because they can ........................ with a large number of students at one time.</p>
+                <input type="text" name="q21" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+            </div>
+
+            <!-- Questions 22-24 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+                <div class="font-semibold text-slate-700 border-b pb-2">
+                    Questions 22-24: Write <span class="text-indigo-600">NO MORE THAN TWO WORDS</span> for each answer.
+                </div>
+
+                <!-- Q22 -->
+                <div class="question-card" data-q="22" data-answer="networking">
+                    <p class="text-slate-700 text-sm mb-2">22. Students can benefit from <span class="font-semibold">........................</span> with each other and comparing notes.</p>
+                    <input type="text" name="q22" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+
+                <!-- Q23 -->
+                <div class="question-card" data-q="23" data-answer="assignment">
+                    <p class="text-slate-700 text-sm mb-2">23. By not attending lectures students miss out on information about what is expected in an <span class="font-semibold">........................</span></p>
+                    <input type="text" name="q23" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+
+                <!-- Q24 -->
+                <div class="question-card" data-q="24" data-answer="more beneficial">
+                    <p class="text-slate-700 text-sm mb-2">24. Tutorial discussions will be <span class="font-semibold">........................</span> for everyone if students attend lectures.</p>
+                    <input type="text" name="q24" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+            </div>
+
+            <!-- Questions 25-30 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 space-y-6">
+                <div class="font-semibold text-slate-700 border-b pb-2">
+                    Questions 25-30: Complete the notes below. Write <span class="text-indigo-600">NO MORE THAN THREE WORDS</span> for each answer.<br>
+                    <span class="text-sm font-normal text-slate-500 italic">Strategies for effective use of lectures</span>
+                </div>
+
+                <!-- Q25 -->
+                <div class="question-card" data-q="25" data-answer="pre-reading">
+                    <p class="text-slate-700 text-sm mb-2">• Do some <span class="font-semibold">........................</span></p>
+                    <input type="text" name="q25" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+
+                <!-- Q26 -->
+                <div class="question-card" data-q="26" data-answer="arrive early">
+                    <p class="text-slate-700 text-sm mb-2">• <span class="font-semibold">........................</span> and sit where you can see and hear easily.</p>
+                    <input type="text" name="q26" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+
+                <!-- Q27 -->
+                <div class="question-card" data-q="27" data-answer="attentive">
+                    <p class="text-slate-700 text-sm mb-2">• Be <span class="font-semibold">........................</span> during the lecture by using (i) visual cues, e.g. slides or a whiteboard.</p>
+                    <input type="text" name="q27" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+
+                <!-- Q28 -->
+                <div class="question-card" data-q="28" data-answer="listening">
+                    <p class="text-slate-700 text-sm mb-2">• You could also use active <span class="font-semibold">........................</span> techniques.</p>
+                    <input type="text" name="q28" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+
+                <!-- Q29 -->
+                <div class="question-card" data-q="29" data-answer="notes">
+                    <p class="text-slate-700 text-sm mb-2">• Take <span class="font-semibold">........................</span></p>
+                    <input type="text" name="q29" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+
+                <!-- Q30 -->
+                <div class="question-card" data-q="30" data-answer="content">
+                    <p class="text-slate-700 text-sm mb-2">• Ask questions to keep focused and engaged in the <span class="font-semibold">........................</span> of the lecture.</p>
+                    <input type="text" name="q30" placeholder="Nhập đáp án..." class="w-full sm:w-80 px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+                    <div class="explanation hidden mt-3 p-3 bg-slate-50 rounded-lg border-l-4 border-indigo-500 text-sm"></div>
+                </div>
+            </div>
+
+            <!-- Submit & Reset Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+                <button type="button" id="submit-btn" class="w-full sm:w-auto px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-check"></i> Nộp Bài & Xem Kết Quả
+                </button>
+                <button type="button" id="reset-btn" class="w-full sm:w-auto px-6 py-3 bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold rounded-xl transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-rotate-right"></i> Làm Lại Từ Đầu
+                </button>
+            </div>
+        </form>
+
+        <!-- Result Banner -->
+        <div id="result-banner" class="hidden mt-8 p-6 bg-indigo-50 border border-indigo-200 rounded-2xl text-center shadow-sm">
+            <h3 class="text-xl font-bold text-indigo-900 mb-1">Kết Quả Bài Làm</h3>
+            <p id="score-text" class="text-lg text-indigo-700 font-semibold mb-2"></p>
+            <p id="feedback-text" class="text-sm text-slate-600"></p>
+        </div>
+
+    </main>
+
+    <footer class="text-center py-6 text-xs text-slate-400 mt-auto border-t">
+        Ứng dụng hỗ trợ ôn tập luyện nghe tương tác © 2026
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        let timeLeft = 30 * 60;
+        const timerElement = document.getElementById('timer');
+        const timerInterval = setInterval(() => {
+            let minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+            timerElement.innerHTML = `<i class="fa-regular fa-clock mr-1"></i> ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert('Đã hết thời gian làm bài!');
+                document.getElementById('submit-btn').click();
+            }
+            timeLeft--;
+        }, 1000);
+
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            let score = 0;
+            const cards = document.querySelectorAll('.question-card');
+            
+            cards.forEach(card => {
+                const correctAnswer = card.getAttribute('data-answer').trim().toLowerCase();
+                const input = card.querySelector('input');
+                const userVal = input.value.trim().toLowerCase();
+                const explanationBox = card.querySelector('.explanation');
+
+                input.classList.remove('border-green-500', 'bg-green-50', 'border-red-500', 'bg-red-50');
+                explanationBox.classList.remove('hidden');
+                
+                if (userVal === correctAnswer) {
+                    score++;
+                    input.classList.add('border-green-500', 'bg-green-50');
+                    explanationBox.innerHTML = `<span class="text-green-700 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Chính xác!</span> Đáp án đúng: <strong>${card.getAttribute('data-answer')}</strong>`;
+                } else {
+                    input.classList.add('border-red-500', 'bg-red-50');
+                    explanationBox.innerHTML = `<span class="text-rose-700 font-semibold"><i class="fa-solid fa-circle-xmark mr-1"></i> Chưa chính xác.</span> Đáp án đúng chuẩn: <strong>${card.getAttribute('data-answer')}</strong>`;
+                }
+            });
+
+            const finalScore10 = ((score / 10) * 10).toFixed(1);
+            const banner = document.getElementById('result-banner');
+            const scoreText = document.getElementById('score-text');
+            const feedbackText = document.getElementById('feedback-text');
+
+            banner.classList.remove('hidden');
+            scoreText.innerHTML = `Bạn đạt được: ${score}/10 câu đúng (Quy đổi: <strong>${finalScore10}/10 điểm</strong>)`;
+            
+            if (score >= 9) {
+                feedbackText.innerText = "Xuất sắc! Kỹ năng nghe của bạn rất tốt.";
+            } else if (score >= 7) {
+                feedbackText.innerText = "Làm tốt lắm! Hãy xem lại một vài từ điền chưa chính xác.";
+            } else {
+                feedbackText.innerText = "Cần cố gắng nghe kỹ lại audio và ôn tập thêm nhé!";
+            }
+
+            banner.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('reset-btn').addEventListener('click', function() {
+            const cards = document.querySelectorAll('.question-card');
+            cards.forEach(card => {
+                const input = card.querySelector('input');
+                const explanationBox = card.querySelector('.explanation');
+                input.value = '';
+                input.classList.remove('border-green-500', 'bg-green-50', 'border-red-500', 'bg-red-50');
+                explanationBox.classList.add('hidden');
+                explanationBox.innerHTML = '';
+            });
+            document.getElementById('result-banner').classList.add('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
